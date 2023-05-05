@@ -1,0 +1,193 @@
+* {
+    font-family: "Montserrat";
+    background-color: black;
+}
+
+header {
+    height: 15vh;
+}
+
+#logo {
+    padding :40px;
+}
+
+#logo h2 {
+    padding: 0;
+    margin: 0%;
+}
+
+#nav-bar {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height : 80px;
+    border : 10px;
+    position: fixed;
+    border-radius: 15px;
+    border : 2px solid white;
+    z-index: 1;
+}
+
+#menu-items {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+#logo {
+    display: flex;
+    justify-self: flex-start;
+    font-size: small;
+    align-items : center;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin: none;
+    padding : 0;
+    padding-left: 40px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+#menu-items a {
+    color: #ffff;
+    background-color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#menu-items a:last-child{
+    margin-right: 50px;
+}
+
+.box1 { 
+    position: relative;
+    display : flex;
+    background-color: black;
+    height : 95vh;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left : 10px;
+    align-content: center;
+    vertical-align: middle;
+    align-items: center;
+    top : -150px;
+}
+
+.box1 h1 { 
+    color : white;
+    background-color: black;
+}
+
+.box1 ul {
+    color: white;
+}
+
+#company-color{
+    color: #e20074;
+}
+
+#uni-color{
+    color: #5CADB3;
+}
+
+.box2 { 
+    background-color: black;
+    margin-bottom: 20px;
+    margin-left : 10px;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.box2 p{
+    display: flex;
+    color : white;
+    justify-content: center;
+    background-color: black;
+    vertical-align: middle;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+.skills{
+    color:#ffffff;
+    position: relative;
+    top: -350px;
+    left: 40px;
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    border: 2px solid white; 
+    height: 14px;
+    background: #282828;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .skill-per{
+    height : 14px;
+    background: #ffffff;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
